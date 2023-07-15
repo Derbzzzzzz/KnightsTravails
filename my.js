@@ -112,6 +112,10 @@ function quickestPath(start, end){
         return false
     }
 
+    if(start[0] === end[0] && start[1] == end[1]){
+        return [start]
+    }
+
     // Initializing BFS queue with starting Node.
     let startNode = new Node(start)
     startNode.getChildren()
@@ -149,6 +153,6 @@ function pathPrint(path){
     }
 }
 
-pathPrint(quickestPath([7, 7], [0, 0]))
+pathPrint(quickestPath([1, 0], [0, 0]))
 
 // console.log(myNode)
