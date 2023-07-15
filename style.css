@@ -1,0 +1,51 @@
+@font-face {
+    font-family: game;
+    src: url(PressStart2P-Regular.ttf);
+}
+
+body, html{
+    margin: 0px;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    font-family: game, sans-serif;
+    font-size: 25px;
+    background-color: lightcyan
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    height: 50px;
+    font-size: 20px;
+    background-color: lightcyan;
+}
+
+.footer-logo{
+    margin-top: 7px;
+}
+
+.footer-github{
+    height: 30px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
